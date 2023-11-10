@@ -1,0 +1,28 @@
+{
+  "name": "web-diff-view",
+  "version": "0.0.0",
+  "description": "This repository is a codebase for displaying file diff comparisons in a web browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kukudeshiyi/web-diff-view.git"
+  },
+  "keywords": [
+    "diff",
+    "view",
+    "web"
+  ],
+  "author": "yi.shi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kukudeshiyi/web-diff-view/issues"
+  },
+  "homepage": "https://github.com/kukudeshiyi/web-diff-view#readme",
+  "dependencies": {
+    "diff": "^5.1.0",
+    "highlight.js": "^11.9.0"
+  }
+}
