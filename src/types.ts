@@ -1,4 +1,4 @@
-import { VIEW_MODE } from './constants';
+import { TEXT_TYPE, VIEW_MODE } from './constants';
 
 export interface File {
   fileName: string;
@@ -12,4 +12,24 @@ export interface DiffFile extends File {
 
 export interface DiffViewConfig {
   viewMode: VIEW_MODE;
+}
+
+export type TargetElement = HTMLElement | string;
+
+export interface FileForView {
+  [key: string]: any;
+  type: TEXT_TYPE;
+  count: number;
+  content: {
+    head: string[];
+    hidden: string[];
+    tail: string[];
+  };
+  leftOffset: number;
+  rightOffset: number;
+}
+
+export interface Ctx {
+  fileList: DiffFile[];
+  fileForView: FileForView[];
 }
